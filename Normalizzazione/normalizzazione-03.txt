@@ -1,0 +1,10 @@
+Totale(CM, materia, CS, sem, cd, nomedoc, dipartimento)
+1FN? si
+2FN? no materia dipende da CM
+Totale(CM, CS, sem, cd, nomedoc, dipartimento)
+Materia(CM, materia)
+
+3FN? no perchè nomedoc e dipartimento dipendono da CD che non è chiave
+Totale(CM, CS, sem, cd)
+Materia(CM, materia)
+Docente(CD, nomedoc, dipartimento)
